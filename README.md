@@ -1,1 +1,1 @@
-# numerai-models
+Presented, are several models I considered when I began participating in the Numerai contests.

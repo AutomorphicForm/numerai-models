@@ -1,0 +1,1 @@
+This is a simple starter model which does not use column sampling or any ensemble approach. Hyper-parameters typically chosen using the validation set provided by numerai.

@@ -1,0 +1,1 @@
+This ensemble approach is inspired by bagging, we sample a select number of eras and train trees on the eras. The goal is to obtain multiple de-correlated models, in a similar manner to the random forest method, whence we can hopefully avoid overfitting.
