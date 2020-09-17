@@ -20,23 +20,18 @@ def main():
     
     #A very basic and straightforward model, low risk of overfitting.
     model1 = xgb.XGBRegressor(n_estimators = 100, max_depth = 6, learning_rate = 0.3, tree_method = 'gpu_hist')
-    
-    #Cross validation is used to select the next two values of n_estimators.
-    model2 = xgb.XGBRegressor(n_estimators = 150, max_depth = 3, learning_rate = 0.5, tree_method = 'gpu_hist')
-    model3 = xgb.XGBRegressor(n_estimators = 350, max_depth = 2, learning_rate = 0.5, tree_method = 'gpu_hist')
+    model2 = xgb.XGBRegressor(n_estimators = 350, max_depth = 2, learning_rate = 0.5, tree_method = 'gpu_hist')
     
     
     
     
     model1.fit(xtrain, train_set['target_kazutsugi'])
     model2.fit(xtrain, train_set['target_kazutsugi'])
-    model3.fit(xtrain, train_set['target_kazutsugi'])
     
     
     
     model1.save_model('xgb1.model')
     model2.save_model('xgb2.model')
-    model3.save_model('xgb3.model')
     
     
 if __name__ == '__main__':
