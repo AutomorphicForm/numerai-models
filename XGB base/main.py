@@ -2,7 +2,6 @@
 """
 Created on Wed Sep  9 15:55:39 2020
 
-@author: vikto
 """
 
 
